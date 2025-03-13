@@ -1,24 +1,93 @@
-// import React from "react";
-// import {View, Text, StyleSheet} from 'react-native';
-
-// const ProductStock = () => {
-//     return(
-//         <View style={styles.container}>
-//             <Text style={styles.container}>This is Product Stock file</Text>
-//         </View>
-//     )
-// }
-
-// export default ProductStock; 
-
-// const styles = StyleSheet.create({
-//     container:{
-//         flex:1
-//     },
-//     Title:{
-//         fontSize: 20,
-//         fontWeight: "bold"
-//     }
-// });
 
 
+import React from "react";
+import { View, StyleSheet, ScrollView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { rS, vS, mS } from "@/style/responsive";
+import LogoTitle from "@/components/inventory/LogoTitle";
+import StockCard from "@/components/inventory/StockCard";
+
+const ProductStock = () => {
+    return (
+        <SafeAreaView style={styles.safeArea}>
+            <ScrollView style={styles.scrollContainer}>
+                <View style={styles.container}>
+                    <LogoTitle
+                        title="পণ্যের স্টক"
+                    />
+
+                    <View style={styles.cardContainer}>
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />  
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />  
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />  
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />  
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />  
+                        <StockCard
+                            productName="পুরুষদের জন্য ফ্যাশনেবল টি শার্ট"
+                            date="২০ জানুয়ারি ২০২২"
+                            stockIn="২০০"
+                            stockOut="5"
+                            stockAvailable="২০০"
+                        />
+                    </View>
+                </View>
+            </ScrollView>
+        </SafeAreaView>
+    );
+};
+
+const styles = StyleSheet.create({
+    safeArea: {
+        flex: 1,
+        backgroundColor: 'white',
+    },
+    scrollContainer: {
+        flex: 1,
+    },
+    container: {
+        flex: 1,
+        padding: 16,
+    },
+    cardContainer: {
+        marginTop: mS(15),
+    },
+});
+
+export default ProductStock;
