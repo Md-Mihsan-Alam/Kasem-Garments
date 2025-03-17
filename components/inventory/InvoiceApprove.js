@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
   },
   signatureLabel: {
-    // textAlign: 'center',
     fontSize: 14,
     color: '#757575',
   },

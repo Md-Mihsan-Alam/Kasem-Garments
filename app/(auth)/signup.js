@@ -24,7 +24,7 @@ const SignUp = () => {
   };
 
   const goToDashboard = () => {
-    router.replace("/(main)/dashboard");
+    router.replace("/(tabs)/Dashboard");
   };
 
   // const goToDashboard = () => {

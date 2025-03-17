@@ -3,7 +3,9 @@
 // import { SafeAreaView } from "react-native-safe-area-context";
 // import { rS, vS, mS } from "@/style/responsive";
 // import LogoTitle from "@/components/inventory/LogoTitle";
-// import FilterComponent from "@/components/inventory/Filter";
+// // import FilterComponent from "@/components/inventory/Filter";
+// import FilterButton from "../../../components/common/Filter";
+// // import SaleTable from "../../../components/inventory/TotalSaleTable";
 // import SaleTable from "../../../components/inventory/TotalSaleTable";
 // const ProductStockTable = () => {
 //     return (
@@ -14,7 +16,7 @@
 //                         title="মোট বিক্রয়"
 //                     />
 //                     <View style={styles.filterContainer}>
-//                         <FilterComponent />
+//                         <FilterButton />
 //                     </View>
 
 //                     <View style={styles.table}>
