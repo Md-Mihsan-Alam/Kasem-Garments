@@ -78,3 +78,38 @@ export default function RootLayout() {
 
     );
 }
+
+
+
+
+
+
+
+
+
+
+// import { auth } from "./firebaseConfig";
+
+
+//  const [user, setUser] = useState(null);
+
+//   useEffect(() => {
+//     const unsubscribe = auth.onAuthStateChanged((user) => {
+//       setUser(user);
+//     });
+//     return unsubscribe;
+//   }, []);
+
+    //   <Stack.Navigator screenOptions={{ headerShown: false }}>
+    //     {!user ? (
+    //       <>
+    //         <Stack.Screen name="SignIn" component={SignInScreen} />
+    //         {user?.uid === "OWNER_FIREBASE_UID" && <Stack.Screen name="SignUp" component={SignUpScreen} />}
+    //       </>
+    //     ) : (
+    //       <>
+    //         <Stack.Screen name="AdminScreen" component={AdminScreen} />
+    //         <Stack.Screen name="EditorScreen" component={EditorScreen} />
+    //       </>
+    //     )}
+    //   </Stack.Navigator>

@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     width: rS(300),
     backgroundColor: '#FFFFFF',
     borderColor: '#D3D3D3',
@@ -38,9 +39,9 @@ const styles = StyleSheet.create({
     paddingVertical: mS(10),
   },
   title: {
-    marginTop: vS(10),
+    marginTop: mS(10),
     fontSize: mS(15),
-    marginBottom: vS(5),
+    marginBottom: mS(5),
     color: '#202634',
     marginLeft: mS(5),
   },
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     fontSize: mS(20),
     color: '#757575',
     marginRight: mS(8),
+    marginLeft: mS(5),
   }
 });
 

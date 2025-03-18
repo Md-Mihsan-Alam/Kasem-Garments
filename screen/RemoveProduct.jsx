@@ -6,10 +6,7 @@ import InputField from "@/components/common/InputField";
 import IconButton from "../components/common/IconButton";
 import ArrowTitle from "../components/common/ArrowTitle";
 
-const AddProductScreen = () => {
-
-
-
+const AddProduct = () => {
   const [product, setProduct] = useState({
     date: '',
     name: '',
@@ -28,7 +25,7 @@ const AddProductScreen = () => {
             </View>
             <Text style={styles.screenTitle}>পণ্য যুক্ত করুন</Text> */}
             <ArrowTitle
-              title="পণ্য যুক্ত করুন"
+              title="পণ্য বিয়োগ করুন"
             />
           </View>
 
@@ -66,7 +63,7 @@ const AddProductScreen = () => {
           </View>
 
           <IconButton
-            title="যুক্ত করুন"
+            title="বিয়োগ করুন"
             iconName="file-o"
             style={styles.checkButton}
           />
@@ -76,7 +73,7 @@ const AddProductScreen = () => {
   );
 };
 
-export default AddProductScreen;
+export default AddProduct;
 
 const styles = StyleSheet.create({
   safeArea: {
@@ -109,10 +106,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   inputContainer: {
-    marginLeft: mS(10),
+    marginLeft: mS(8),
   },
   checkButton: {
     // marginTop: mS(-20),
-    marginLeft: mS(10),
+    marginLeft: mS(5),
   },
 });

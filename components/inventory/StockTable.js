@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { mS } from '@/style/responsive';
 
 const TableComponent = () => {
   const data = [
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderWidth: 1,
     borderRadius: 8,
-    margin: 16,
+    margin: mS(16),
     width: '100%', 
     alignSelf: 'center', 
   },
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
   },
   headerCell: {
     flex: 1,
-    padding: 10,
+    padding: mS(10),
     fontWeight: '600',
     textAlign: 'center',
     borderRightWidth: 1,
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
   },
   dataCell: {
     flex: 1.2, // Increase the flex value of data cells
-    padding: 10,
+    padding: mS(10),
     textAlign: 'center',
     borderRightWidth: 1,
     borderColor: '#ddd',

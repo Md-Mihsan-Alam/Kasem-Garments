@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
     logo: {
         color: "white",
-        fontSize: rS(20),
+        fontSize: rS(22),
         fontWeight: "bold",        
     },
     screenName: {

@@ -60,7 +60,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import Icon from '@expo/vector-icons/FontAwesome';
-
+import { rS, vS, mS } from "@/style/responsive";
 
 const InfoCard = ({ title, description, src }) => {
     return (
@@ -86,52 +86,51 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingVertical: 16,
-        paddingHorizontal: 14,
+        paddingVertical: mS(16),
+        paddingHorizontal: mS(14),
         borderRadius: 30,
         backgroundColor: "white",
         borderColor: "#4caf50",
         borderWidth: 1,
-        marginBottom: 16,
+        marginBottom: mS(16),
     },
     contentContainer: {
         flexDirection: 'column',
         alignItems: 'center',
-        paddingHorizontal: 8,
+        paddingHorizontal: mS(8),
     },
     imageContainer: {
-        marginRight: 160,
-        marginBottom: 8,
+        marginRight: mS(160),
+        marginBottom: mS(8),
     },
     image: {
-        width: 45,
-        height: 45,
+        width: rS(45),
+        height: vS(45),
         borderRadius: 8,
     },
     textContainer: {
         flex: 1,
     },
     title: {
-        fontSize: 20,
+        fontSize: mS(20),
         fontWeight: "600",
-        marginBottom: 5,
+        marginBottom: mS(5),
     },
     description: {
-        fontSize: 18,
+        fontSize: mS(18),
         color: "black",
     },
     iconContainer: {
-        height: 50,
-        width: 50,
+        padding: mS(15),
         transform: [{ rotate: '45deg' }],
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#4caf50',
         borderRadius: 50,
-        marginTop: -60
+        marginTop: mS(-60)
     },
     uparrowicon: {
-        fontSize: 25,
+        fontSize: mS(25),
         color: "white",
         fontWeight: "100"
     }
