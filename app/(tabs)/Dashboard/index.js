@@ -1,10 +1,7 @@
-import React from "react";
-import DashboardScreen from "../../../screen/Dashboard";
+// import DashboardScreen from "../../../screen/Dashboard";
 
-const Dashboard = () => {
-    return (
-        <DashboardScreen/>
-    );
-};
+// export default DashboardScreen;
 
-export default Dashboard;
+import InvoiceScreen from '../../../screen/Invoice';
+
+export default InvoiceScreen;

@@ -1,0 +1,142 @@
+[
+    {
+        "date": "০৫/০১/২০২৪",
+        "product": "মহিলাদের সুতির শার্ট",
+        "stockIn": "৫০০",
+        "stockOut": "২৫",
+        "stockAvailable": "৪৭৫"
+    },
+    {
+        "date": "০৬/০২/২০২৪",
+        "product": "শিশুদের জিন্স প্যান্ট",
+        "stockIn": "৩০০",
+        "stockOut": "১০",
+        "stockAvailable": "২৯০"
+    },
+    {
+        "date": "০৭/০৩/২০২৪",
+        "product": "পুরুষদের ফরমাল প্যান্ট",
+        "stockIn": "১০০০",
+        "stockOut": "৫০",
+        "stockAvailable": "৯৫০"
+    },
+    {
+        "date": "০৮/০৪/২০২৪",
+        "product": "মহিলাদের সিল্কের শাড়ি",
+        "stockIn": "২০০",
+        "stockOut": "৫",
+        "stockAvailable": "১৯৫"
+    },
+    {
+        "date": "০৯/০৫/২০২৪",
+        "product": "শিশুদের রঙিন গেঞ্জি",
+        "stockIn": "৮০০",
+        "stockOut": "৪০",
+        "stockAvailable": "৭৬০"
+    },
+    {
+        "date": "১০/০৬/২০২৪",
+        "product": "পুরুষদের ক্যাজুয়াল টি-শার্ট",
+        "stockIn": "৬০০",
+        "stockOut": "২২",
+        "stockAvailable": "৫৭৮"
+    },
+    {
+        "date": "১১/০৭/২০২৪",
+        "product": "মহিলাদের লেগিংস",
+        "stockIn": "৪০০",
+        "stockOut": "১৫",
+        "stockAvailable": "৩৮৫"
+    },
+    {
+        "date": "১২/০৮/২০২৪",
+        "product": "শিশুদের ফ্রক",
+        "stockIn": "৭০০",
+        "stockOut": "৩৫",
+        "stockAvailable": "৬৬৫"
+    },
+    {
+        "date": "১৩/০৯/২০২৪",
+        "product": "পুরুষদের জ্যাকেট",
+        "stockIn": "৯০০",
+        "stockOut": "৪৫",
+        "stockAvailable": "৮৫৫"
+    },
+    {
+        "date": "১৪/১০/২০২৪",
+        "product": "মহিলাদের স্কার্ট",
+        "stockIn": "২৫০",
+        "stockOut": "১২",
+        "stockAvailable": "২৩৮"
+    },
+    {
+        "date": "১৫/১১/২০২৪",
+        "product": "শিশুদের সোয়েটার",
+        "stockIn": "৫৫০",
+        "stockOut": "২৭",
+        "stockAvailable": "৫২৩"
+    },
+    {
+        "date": "১৬/১২/২০২৪",
+        "product": "পুরুষদের শার্ট",
+        "stockIn": "৩৫০",
+        "stockOut": "১৭",
+        "stockAvailable": "৩৩৩"
+    },
+    {
+        "date": "১৭/০১/২০২৫",
+        "product": "মহিলাদের টপস",
+        "stockIn": "৬৫০",
+        "stockOut": "৩২",
+        "stockAvailable": "৬১৮"
+    },
+    {
+        "date": "১৮/০২/২০২৫",
+        "product": "শিশুদের পাজামা",
+        "stockIn": "৪৫০",
+        "stockOut": "২০",
+        "stockAvailable": "৪৩০"
+    },
+    {
+        "date": "১৯/০৩/২০২৫",
+        "product": "পুরুষদের জিন্স প্যান্ট",
+        "stockIn": "৭৫০",
+        "stockOut": "৩৮",
+        "stockAvailable": "৭১২"
+    },
+    {
+        "date": "২০/০৪/২০২৫",
+        "product": "মহিলাদের পালাজ্জো",
+        "stockIn": "২৫০",
+        "stockOut": "১২",
+        "stockAvailable": "২৩৮"
+    },
+    {
+        "date": "২১/০৫/২০২৫",
+        "product": "শিশুদের টি-শার্ট",
+        "stockIn": "৫৫০",
+        "stockOut": "২৭",
+        "stockAvailable": "৫২৩"
+    },
+    {
+        "date": "২২/০৬/২০২৫",
+        "product": "পুরুষদের পোলো শার্ট",
+        "stockIn": "৩৫০",
+        "stockOut": "১৭",
+        "stockAvailable": "৩৩৩"
+    },
+    {
+        "date": "২৩/০৭/২০২৫",
+        "product": "মহিলাদের কুর্তি",
+        "stockIn": "৬৫০",
+        "stockOut": "৩২",
+        "stockAvailable": "৬১৮"
+    },
+    {
+        "date": "২৪/০৮/২০২৫",
+        "product": "শিশুদের হাফ প্যান্ট",
+        "stockIn": "৪৫০",
+        "stockOut": "২০",
+        "stockAvailable": "৪৩০"
+    }
+]

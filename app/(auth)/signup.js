@@ -34,8 +34,8 @@ const SignUp = () => {
       // Save user details in Firestore
       await setDoc(doc(db, "users", user.uid), {
         email: user.email,
-        role: form.accountType, // Store the selected role (admin/editor)
-        picture: form.picture, // Store profile picture URL
+        role: form.accountType, 
+        picture: form.picture, 
       });
   
       console.log("User created:", user.email);

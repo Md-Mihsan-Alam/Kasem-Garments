@@ -1,28 +1,39 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { rS, vS, mS } from '@/style/responsive';
 
 const InvoiceApproveSection = () => {
   return (
     <View style={styles.container}>
       <View style={styles.circle}>
         <Icon name="check" size={50} color="#4CAF50" />
+        <Text style={styles.approvedText}>Approved</Text>
+        <Text style={styles.invoiceText}>Invoice</Text>
       </View>
-      <Text style={styles.approvedText}>Approved</Text>
-      <Text style={styles.invoiceText}>Invoice</Text>
 
-      <View style={styles.signaturesContainer}>
-        <View style={styles.signatureLine}>
-          <Text style={styles.signatureLabel}>ক্রেতার স্বাক্ষর</Text>
+
+      <View style={styles.signatures}>
+        <View style={styles.propitorSignature}>
+          {/* name ta change korte hobe karon customer er name lagabe  */}
+          <Text style={styles.name}> আহমেদ হোসেন </Text>
+          <View style={styles.signatureLine}>
+            <Text style={[styles.signatureLabel  , {marginLeft: mS(35)}]}>ক্রেতার স্বাক্ষর</Text>
+          </View>
         </View>
-        <View style={styles.signatureLine}>
-          <Text style={styles.signatureLabel}>মেমো প্রস্তুতকারক</Text>
+
+        <View style={styles.propitorSignature}>
+          <Text style={styles.name}>আহমেদ হোসেন</Text>
+          <View style={styles.signatureLine}>
+            <Text style={styles.signatureLabel}>মেমো প্রস্তুতকারক</Text>
+          </View>
         </View>
+
       </View>
 
       <View style={styles.address}>
         <Text style={styles.addressText}>শহীদ ডা. শামসুল হক সড়ক, সৈয়দপুর, নীলফামারী</Text>
-        <Text style={styles.addressText}>মোবাইলঃ ০১৭১২-০০০৬৯৯ • আরজুঃ ০১৭১২-০০০৬৯৯ • রওনকঃ ০১৭১২-০০০৬৯৯</Text>
+        <Text style={styles.mobileNumber}>মোবাইলঃ ০১৭১২-০০০৬৯৯ • আরজুঃ ০১৭১২-০০০৬৯৯ • রওনকঃ ০১৭১২-০০০৬৯৯</Text>
       </View>
     </View>
   );
@@ -31,49 +42,63 @@ const InvoiceApproveSection = () => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    padding: 20,
+    padding: mS(18),
   },
   circle: {
-    width: 150,
-    height: 150,
-    borderRadius: 75,
+    width: vS(160),
+    height: vS(160),
+    borderRadius: '50%',
     borderWidth: 5,
     borderColor: '#E0E0E0',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: mS(10),
   },
   approvedText: {
-    fontSize: 24,
+    fontSize: mS(24),
     fontWeight: 'bold',
-    marginBottom: 5,
+    marginBottom: mS(5),
   },
   invoiceText: {
-    fontSize: 16,
+    fontSize: mS(16),
     color: '#757575',
-    marginBottom: 20,
   },
-  signaturesContainer: {
+  propitorSignature: {
+    // not need any style
+  },
+  signatures: {
+    marginTop: mS(20),
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginBottom: 20,
+    marginBottom: mS(20),
   },
   signatureLine: {
     flex: 1,
-    borderBottomWidth: 1,
+    borderTopWidth: 1,
     borderColor: '#BDBDBD',
-    paddingBottom: 5,
+    paddingBottom: mS(5),
   },
   signatureLabel: {
-    fontSize: 14,
+    fontSize: mS(12),
+    marginLeft: mS(25),
     color: '#757575',
+  },
+  name: {
+    fontSize: mS(16),
+    fontWeight: 'bold',
+    marginHorizontal: mS(10),
   },
   address: {
     alignItems: 'center',
   },
   addressText: {
-    fontSize: 14,
+    fontSize: mS(13),
+    color: '#757575',
+    textAlign: 'center',
+  },
+  mobileNumber: {
+    fontSize: mS(9),
     color: '#757575',
     textAlign: 'center',
   },

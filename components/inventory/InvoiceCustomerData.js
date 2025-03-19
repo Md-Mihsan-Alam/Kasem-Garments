@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { rS, vS, mS } from '@/style/responsive';
 
 const InvoiceCustomerData = () => {
     const [serialNumber, setSerialNumber] = useState('৮৯৭৬');
@@ -43,22 +44,22 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     inputDiv: {
-        marginBottom: 16,
+        marginBottom: mS(14),
     },
     label: {
-        fontSize: 16,
+        fontSize: mS(16),
         color: 'black',
         fontWeight: '500',
-        marginBottom: 4,
+        marginBottom: mS(4),
     },
     input: {
-        fontSize: 18,
+        fontSize: mS(14),
         fontWeight: '600',
         borderWidth: 1,
         borderColor: '#ccc', 
         borderRadius: 6, 
-        paddingHorizontal: 10,
-        paddingVertical: 12, 
+        paddingHorizontal: mS(10),
+        paddingVertical: mS(12), 
         width: '100%',
         backgroundColor: 'white',
     },
