@@ -109,7 +109,6 @@ const styles = StyleSheet.create({
     marginLeft: mS(8),
   },
   checkButton: {
-    // marginTop: mS(-20),
     marginLeft: mS(5),
   },
 });

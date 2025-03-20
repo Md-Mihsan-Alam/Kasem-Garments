@@ -10,15 +10,15 @@ const DashboardScreen = () => {
     const router = useRouter();
 
     const goToProductStock = () => {
-        router.replace("/(main)/Product-Stock");
+        router.replace("/(tabs)/Dashboard/Product-Stock");
     }
 
     const goToReturnStock = () => {
-        router.replace("/(main)/Return-Stock");
+        router.replace("/(tabs)/Dashboard/Return-Stock");
     }
 
     const gotoTotalSale = () => {
-        router.replace("/(main)/Sales");
+        router.replace("/(tabs)/Dashboard/Sales");
     }
 
     return (
@@ -97,7 +97,8 @@ const styles = StyleSheet.create({
         paddingBottom: mS(20),
     },
     container: {
-        paddingHorizontal: mS(20),
+        paddingHorizontal: mS(25),
+        paddingVertical: mS(10),
         width: "100%",
     },
     profileContainer: {

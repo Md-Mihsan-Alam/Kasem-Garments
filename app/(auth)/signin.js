@@ -11,7 +11,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 const SignIn = () => {
 
   const [form, setForm] = useState({
-    email: '',    // Email field for user login
+    email: '',    
     password: '',
   });
 
@@ -22,9 +22,9 @@ const SignIn = () => {
       const userCredential = await signInWithEmailAndPassword(auth, form.email, form.password);
       const user = userCredential.user;
       console.log('Logged in with :' + user.email);
-      router.replace("(tabs)/Dashboard");  // Redirect to Dashboard after login
+      router.replace("(tabs)/Dashboard"); 
     } catch (error) {
-      alert(error.message);  // Show any error if login fails
+      alert(error.message); 
     }
   }
 
@@ -45,9 +45,9 @@ const SignIn = () => {
 
           <View style={styles.inputContainer}>
             <InputField
-              iconName="envelope"   
-              title="আপনার ইমেইল ঠিকানা লিখুন"
-              placeholder="যেমন: example@mail.com"
+              iconName="mobile"   
+              title="আপনার মোবাইল নম্বর লিখুন"
+              placeholder="যেমন: ০১০১১-১০০১১০"
               value={form.email}
               handleChangeText={(e) => setForm({ ...form, email: e })}
               keyboardType="email-address"   
@@ -59,7 +59,7 @@ const SignIn = () => {
               placeholder="**** **** ****"
               value={form.password}
               handleChangeText={(e) => setForm({ ...form, password: e })}
-              secureTextEntry={true}    // Secure text entry for password field
+              secureTextEntry={true}   
             />
           </View>
 
@@ -67,7 +67,7 @@ const SignIn = () => {
 
           <CustomButton
             title="লগইন করুন"
-            onPress={handleLogin}   // Handle login on button press
+            onPress={handleLogin}  
           />
 
         </View>
@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     marginLeft: mS(10),
-    width: rS(40),
-    height: vS(40),
+    width: mS(45),
+    height: mS(45),
     borderRadius: 10,
     backgroundColor: "#4caf50",
     justifyContent: 'center',

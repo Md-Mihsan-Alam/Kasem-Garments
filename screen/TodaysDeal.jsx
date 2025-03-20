@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { rS, vS, mS } from "@/style/responsive";
 import ArrowTitle from "../components/common/ArrowTitle";
 import DealsCard from "../components/inventory/DealsCard";
+import IconButton from "../components/common/IconButton";
 
 const TodaysDealScreen = () => {
     return (
@@ -25,6 +26,11 @@ const TodaysDealScreen = () => {
                     <DealsCard />
                     <DealsCard />
 
+{/* eta evabe thakbe na button ta oita bottom tab navigation er sathe lege thakbe
+ niche gele niche upore gele upore jabe 
+ aita apatoto lagano holo 
+*/}
+                    <IconButton title="সকল মেমো ডাউনলোড করুন" iconName="print"/>
 
                 </View>
             </ScrollView>

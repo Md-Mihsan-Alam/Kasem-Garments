@@ -25,14 +25,14 @@ const styles = StyleSheet.create({
     logoContainer: {
         backgroundColor: "#4CAF50",
         borderRadius: 10,
-        width: rS(40),
-        height: rS(40),
+        width: mS(45),
+        height: mS(45),
         justifyContent: "center",
         alignItems: "center",
     },
     logo: {
         color: "white",
-        fontSize: rS(22),
+        fontSize: rS(28),
         fontWeight: "bold",        
     },
     screenName: {

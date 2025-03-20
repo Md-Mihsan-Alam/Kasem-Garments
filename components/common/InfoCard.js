@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingVertical: mS(16),
-        paddingHorizontal: mS(14),
+        paddingVertical: mS(12),
+        paddingHorizontal: mS(10),
         borderRadius: 30,
         backgroundColor: "white",
         borderColor: "#4caf50",
@@ -97,15 +97,15 @@ const styles = StyleSheet.create({
     contentContainer: {
         flexDirection: 'column',
         alignItems: 'center',
-        paddingHorizontal: mS(8),
+        paddingHorizontal: mS(5),
     },
     imageContainer: {
-        marginRight: mS(160),
+        marginRight: mS(145),
         marginBottom: mS(8),
     },
     image: {
-        width: rS(45),
-        height: vS(45),
+        width: mS(45),
+        height: mS(45),
         borderRadius: 8,
     },
     textContainer: {
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         marginBottom: mS(5),
     },
     description: {
-        fontSize: mS(18),
+        fontSize: mS(16),
         color: "black",
     },
     iconContainer: {

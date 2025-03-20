@@ -1,7 +1,7 @@
-// import DashboardScreen from "../../../screen/Dashboard";
+import DashboardScreen from "../../../screen/Dashboard";
 
-// export default DashboardScreen;
+export default DashboardScreen;
 
-import InvoiceScreen from '../../../screen/Invoice';
+// import InvoiceScreen from '../../../screen/Invoice';
 
-export default InvoiceScreen;
+// export default InvoiceScreen;

@@ -181,10 +181,9 @@ const goToDashboard = () => {
           <CustomButton
             title="অ্যাকাউন্ট তৈরি করুন"
             onPress={handleSignUp}
-            // onPress={goToDashboard}
             otherStyles={styles.signUpButton}
           />
-
+          <View style={styles.loginDivider}></View>
           <TouchableOpacity style={styles.loginLinkContainer} onPress={handleLogin}>
             <Text style={styles.loginLink}>আমার একটি অ্যাকাউন্ট রয়েছে</Text>
             <View style={styles.loginButton}>
@@ -221,9 +220,9 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     marginTop: mS(30),
-    width: rS(50),
-    height: vS(45),
-    borderRadius: 15,
+    width: mS(45),
+    height: mS(45),
+    borderRadius: 10,
     backgroundColor: "#4caf50",
     justifyContent: 'center',
     alignItems: 'center',
@@ -250,11 +249,10 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: '100%',
-    marginLeft: mS(15),
+    marginLeft: rS(20),
   },
   inputTitle: {
     fontSize: mS(15),
-    // marginBottom: mS(5),
     color: '#222222',
     textAlign: 'left',
     marginLeft: mS(-8),
@@ -265,7 +263,6 @@ const styles = StyleSheet.create({
   },
   imageUploadContainer: {
     marginBottom: mS(5),
-    // width: rS(300),
     alignItems: 'flex-start',
     flexDirection: 'column',
     marginLeft: mS(15),
@@ -278,7 +275,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: mS(8),
+    marginTop: mS(5),
     marginLeft: mS(-10),
   },
   uploadedImage: {
@@ -286,8 +283,15 @@ const styles = StyleSheet.create({
     height: vS(70),
     borderRadius: 50,
   },
-  accountTypeContainer: {
+  loginDivider: {
+    width: '93%',
+    height: 1,
+    backgroundColor: '#D3D3D3',
     marginTop: mS(20),
+    marginBottom: mS(5),
+  },
+  accountTypeContainer: {
+    marginTop: mS(10),
     width: '90%',
   },
   accountTypeButtons: {
@@ -318,12 +322,6 @@ const styles = StyleSheet.create({
   },
   signUpButton: {
     marginLeft: mS(0),
-    // marginTop: mS(30),
-    // marginBottom: mS(20),
-    // width: '90%',
-    // maxWidth: mS(350),
-    // paddingVertical: mS(14),
-    // fontSize: mS(16),
   },
   loginLinkContainer: {
     flexDirection: 'column',
@@ -334,7 +332,7 @@ const styles = StyleSheet.create({
   loginLink: {
     fontSize: mS(14),
     color: 'black',
-    marginBottom: mS(8),
+    marginBottom: mS(6),
   },
   loginButton: {
     width: rS(300),

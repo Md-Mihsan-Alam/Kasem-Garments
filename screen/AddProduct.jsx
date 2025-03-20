@@ -23,10 +23,6 @@ const AddProductScreen = () => {
       <ScrollView style={styles.scrollContainer}>
         <View style={styles.container}>
           <View style={styles.topContainer}>
-            {/* <View style={styles.iconContainer}>
-              <IconSymbol name="arrow.left" style={styles.icon} />
-            </View>
-            <Text style={styles.screenTitle}>পণ্য যুক্ত করুন</Text> */}
             <ArrowTitle
               title="পণ্য যুক্ত করুন"
             />
@@ -104,15 +100,14 @@ const styles = StyleSheet.create({
     marginTop: mS(30),
   },
   image: {
-    width: rS(130),
-    height: rS(130),
+    width: mS(130),
+    height: mS(130),
     borderRadius: 10,
   },
   inputContainer: {
     marginLeft: mS(10),
   },
   checkButton: {
-    // marginTop: mS(-20),
     marginLeft: mS(10),
   },
 });

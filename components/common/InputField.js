@@ -17,8 +17,8 @@ const InputField = ({ title, value, placeholder, handleChangeText, keyboardType,
           value={value}
           placeholderTextColor="#757575"
           onChangeText={handleChangeText}
-        // keyboardType={keyboardType || 'default'}
-        // secureTextEntry={secureTextEntry && !showPassword}
+          secureTextEntry={secureTextEntry && !showPassword}
+       // keyboardType={keyboardType || 'default'}
         />
       </View>
     </View>
@@ -60,6 +60,11 @@ const styles = StyleSheet.create({
 });
 
 export default InputField;
+
+
+
+// With eye Icon for secureTextEntry auto hide/show password 
+
 
 // import React, { useState } from 'react';
 // import { TextInput, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
