@@ -7,6 +7,9 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 // import TabBarBackground from '@/components/ui/TabBarBackground';
 // import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import Icon from 'react-native-vector-icons/Ionicons';
+import IconMaterial from 'react-native-vector-icons/MaterialCommunityIcons';
+// import IconFont from 'react-native-vector-icons/FontAwesome';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -35,23 +38,35 @@ export default function TabLayout() {
       <Tabs.Screen
         name="Dashboard/index"
         options={{
-            title: 'Dashboard',
+            title: 'হোম',
             tabBarIcon: ({ color }) => 
-            <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
+            // <IconSymbol size={28} name="house.fill" color={color} />,
+            <Icon name='home' size={26} color={color}/>
+          }}
       />
       <Tabs.Screen
         name="AddProduct/index"
         options={{
-          title: 'Add Product',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="plus.square.fill" color={color} />,
+          title: 'পণ্য যুক্ত করুন',
+          // tabBarIcon: ({ color }) => <IconSymbol size={28} name="plus.square.fill" color={color} />,
+          tabBarIcon: ({color}) => <IconMaterial name='plus' size={26} color={color}/> 
+          
         }}
       />
       <Tabs.Screen
         name="TodaysSale/index"
         options={{
-          title: 'Today Deals',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="invoice.fill" color={color} />,
+          title: 'আজকের মেমোর বিবরণ',
+          // tabBarIcon: ({ color }) => <IconSymbol size={28} name="invoice.fill" color={color} />,
+          tabBarIcon: ({color}) => <Icon name='receipt' size={26} color={color}/> 
+          
+        }}
+      />
+      <Tabs.Screen
+        name="Invoice/index"
+        options={{
+          title: 'বিক্রি করুন',
+          tabBarIcon: ({color}) => <Icon name='cart' size={26} color={color}/> 
         }}
       />
     </Tabs>

@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: mS(20),
         width: "100%",
         // alignItems: 'center',
+        marginBottom: mS(20),
     },
     CustomerData: {
         marginTop: mS(20),
